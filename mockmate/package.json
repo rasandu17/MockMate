@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.24.0",
+    "@clerk/react-router": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.0.9",
     "class-variance-authority": "^0.7.1",
@@ -17,6 +19,7 @@
     "lucide-react": "^0.476.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.9",
     "tailwindcss-animate": "^1.0.7"
@@ -34,5 +37,14 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@clerk/shared",
+      "esbuild"
+    ],
+    "onlyBuiltDependencies": [
+      "@clerk/shared"
+    ]
   }
 }
